@@ -19,5 +19,8 @@ const time = document.getElementById('time'),
     // Output Time
     time.innerHTML = `${hour}<span>:</span>${min}<span>:</span>${sec}`;
 
-    
+    setTimeout(showTime, 1000);
   }
+
+  // Run
+  showTime();
