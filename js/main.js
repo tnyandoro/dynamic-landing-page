@@ -17,5 +17,5 @@ const time = document.getElementById('time'),
     hour = hour % 12 || 12;
 
     // Output Time
-    time.innerHTML = `${hour}<span>:</span>`
+    time.innerHTML = `${hour}<span>:</span>${min}<span>:</span>${sec}`
   }
