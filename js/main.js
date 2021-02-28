@@ -34,7 +34,25 @@ function setBgGreet() {
   let today = new Date(),
     hour = today.getHours();  
 
-    
+    if(hour < 12) {
+      // Morning
+      document.body.style.backgroundImage = "url('../img/morning.jpg')";
+      greeting.textContent = 'Good Morning';
+      document.body.style.color = 'white';
+    } else if(hour < 18) {
+      // Afternoon
+      document.body.style.backgroundImage = "url('../img/afternoon.jpg')";
+      greeting.textContent = 'Good Afternoon';
+    } else {
+      // evenning
+      document.body.style.backgroundImage = "url('../img/evening.jpg')";
+      greeting.textContent = 'Good Evening';
+      document.body.style.color = 'white';
+    }
 }
+
+// Get Name function 
+
   // Run
   showTime();
+  setBgGreet();
