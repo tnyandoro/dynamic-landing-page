@@ -29,5 +29,12 @@ const time = document.getElementById('time'),
     
   }
 
+  // Set Background and Greeting
+function setBgGreet() {
+  let today = new Date(),
+    hour = today.getHours();  
+
+    
+}
   // Run
   showTime();
