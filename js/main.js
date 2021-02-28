@@ -5,7 +5,6 @@ const time = document.getElementById('time'),
   greeting = document.getElementById('');
 
   //  show Time
-
   function showTime() {
     let today =new Date(),
     hour = today.getHours(),
